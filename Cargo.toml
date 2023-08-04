@@ -1,0 +1,18 @@
+[package]
+name = "wasm-arithmetic-exception"
+version = "1.0.0"
+authors = ["Robert Zaremba 'https://zaremba.ch/'"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
+[dependencies]
+near-sdk = { version = "^4.1.1", features = ["unstable"] }
+serde_json = { version = "^1.0", features = ["raw_value"] }
+uint = { version = "^0.9.5", default-features = false }
+sha2 = "0.9"
+
+[dev-dependencies]
+rand = "^0.7"
